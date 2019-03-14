@@ -1,0 +1,35 @@
+package com.example.java;
+
+public class Main {
+        public static void findVowelsandConstants (String input){
+                        int vowelsCount = 0;
+                        int constantCount = 0;
+                        String vowels = "aeiouy";
+                        String normalized = (input.toLowerCase()).trim();
+                        char[] inputcharArray = normalized.toCharArray();
+                        for (char c : inputcharArray) {
+                                if (vowels.indexOf(c) != -1) {
+                                        vowelsCount++;
+                                } else if (c != ' ') {
+                                        constantCount++;
+                                }
+                        }
+                        System.out.println("There are " +  vowelsCount  + " vowels in:" + input);
+
+                System.out.println("There are " +  constantCount + " constants in:" + input);
+                System.out.println();
+                }
+
+        public static void main(String[] args){
+
+                String S1="Hello";
+                String S2="there is a quiet Mouse";
+                System.out.println("algo 1 -------");
+                findVowelsandConstants(S1);
+                findVowelsandConstants(S2);
+
+
+        }
+
+
+}
