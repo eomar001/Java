@@ -1,11 +1,11 @@
 package com.example.java;
 
 public class Main {
-        public static void findVowelsandConstants (String input){
+        public static void findVowelsandConstants (String input){  //create method 
                         int vowelsCount = 0;
                         int constantCount = 0;
                         String vowels = "aeiouy";
-                        String normalized = (input.toLowerCase()).trim();
+                        String normalized = (input.toLowerCase()).trim(); //remove upeercase letters and space
                         char[] inputcharArray = normalized.toCharArray();
                         for (char c : inputcharArray) {
                                 if (vowels.indexOf(c) != -1) {
@@ -20,16 +20,12 @@ public class Main {
                 System.out.println();
                 }
 
-        public static void main(String[] args){
+        public static void main(String[] args){//define main method
 
                 String S1="Hello";
                 String S2="there is a quiet Mouse";
                 System.out.println("algo 1 -------");
-                findVowelsandConstants(S1);
+                findVowelsandConstants(S1);  //pass the strings to the method which si being called 
                 findVowelsandConstants(S2);
-
-
         }
-
-
 }
