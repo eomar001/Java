@@ -4,7 +4,7 @@ public class Car implements Vehicle{
         this.type= type;
     }
    public VehicleSize getSize(){
-        return VehicleSize.SMALL;
+        return VehicleSize.MEDIUM;
    }
    public VehicleType getType(){
         return type;
