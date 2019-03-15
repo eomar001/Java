@@ -4,7 +4,7 @@ public class Truck  implements Vehicle{
         this.type= type;
     }
     public VehicleSize getSize(){
-        return VehicleSize.SMALL;
+        return VehicleSize.LARGE;
     }
     public VehicleType getType(){
         return type;
