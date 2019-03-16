@@ -1,0 +1,13 @@
+
+public class Solution {
+    public static void main(String[] args) {
+        System.out.println(convertCelsiusToFahrenheit(41));
+    }
+
+    public static double convertCelsiusToFahrenheit(int celsius) {
+        //write your code here
+       // TC = (TF - 32) * 5/9.
+       double fahrenheit = (celsius* (9 / 5.0 )+ 32);
+       return fahrenheit;
+    }
+}
