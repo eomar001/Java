@@ -1,0 +1,28 @@
+
+/*
+A triangle can exist only if the sum of any two of its sides is greater than the third side.
+You need to compare each side with the sum of the other two.
+If even one side is larger than the sum of the other two sides, then no such triangle exists.
+
+*/
+
+import java.io.*;//doesn't effect excution time
+
+public class Solution {
+    public static void main(String[] args) throws Exception {
+        BufferedReader scan= new BufferedReader(new InputStreamReader (System.in));
+        String s1= scan.readLine();
+        int a= Integer.parseInt(s1);
+        String s2= scan.readLine();
+        int b= Integer.parseInt(s2);
+        String s3= scan.readLine();
+        int c= Integer.parseInt(s3);
+        if((a+c>b) && (a+b>c) &&(b+a>c)&&(b+c>a)&&(c+a>b)&&(c+b>a))
+        System.out.println("The triangle is possible.");
+        else
+        System.out.println("The triangle is not possible.");
+        
+        
+        
+    }
+}
