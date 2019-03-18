@@ -1,0 +1,33 @@
+
+/* 
+Do we have a pair?
+Use the keyboard to enter three integers.
+Determine whether there is at least one pair of equal numbers among them.
+If such a pair exists, display the numbers separated by a space. 
+If all three numbers are equal, then display all three.
+
+*/
+
+import java.io.*;
+
+public class Solution {
+    public static void main(String[] args) throws Exception {
+        //write your code here
+        BufferedReader scan= new BufferedReader(new InputStreamReader(System.in));
+        String s1=scan.readLine();
+        int a = Integer.parseInt(s1);
+        String s2=scan.readLine();
+        int b = Integer.parseInt(s2);
+        String s3=scan.readLine();
+        int c = Integer.parseInt(s3);
+        if(a==b&&b==c&&a==c)
+        System.out.println(a+" "+b+" "+c);
+        else if(a==b)
+        System.out.println(a +" " +b);
+        else if(b==c)
+        System.out.println(b +" " +c);
+        else if(c==a)
+        System.out.println(a +" " +c);
+        
+    }
+}
