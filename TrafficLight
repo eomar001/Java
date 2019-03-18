@@ -1,0 +1,28 @@
+/* 
+Crossing the road blindlyhe pedestrian traffic light is programmed as follows: 
+at the beginning of each hour, the green signal is on for three minutes,
+then the signal is yellow for one minute, 
+and then it is red for one minute.
+Then the light is green again for three minutes, etc.
+Use the keyboard to enter a real number t that represents
+the number of minutes that have elapsed since the beginning of the hour.
+
+*/
+
+import java.io.*;
+
+public class Solution {
+    public static void main(String[] args) throws Exception {
+        BufferedReader scan= new BufferedReader ( new InputStreamReader ( System.in));
+        String s = scan.readLine();
+        double T= Double.parseDouble(s);
+        T = T % 5;
+        if (T >= 0 && T < 3) 
+        System.out.println("green");
+        else if (T >= 3 && T < 4) 
+        System.out.println("yellow");
+        else if (T >= 4 && T < 5) 
+        System.out.println("red");
+            
+    }
+}
