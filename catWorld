@@ -1,0 +1,29 @@
+In the main method, create three Cat objects and fill them with data.
+Use the Cat class from the first task. You don't need to create the Cat class.
+
+*/
+
+public class Solution {
+    public static void main(String[] args) {
+        //write your code here
+        Cat cat1= new Cat("Alex", 12, 45, 10);
+     
+         Cat cat2= new Cat("Ava", 14 , 45, 20);
+      
+         Cat cat3= new Cat("meh", 12, 12, 40);
+    }
+
+    public static class Cat {
+        private String name;
+        private int age;
+        private int weight;
+        private int strength;
+
+        public Cat(String name, int age, int weight, int strength) {
+            this.name = name;
+            this.age = age;
+            this.weight = weight;
+            this.strength = strength;
+        }
+    }
+}
