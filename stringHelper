@@ -1,0 +1,32 @@
+
+
+/* 
+StringHelper class
+Make the StringHelper class, which will have 2 static methods:
+String multiply(String s, int count) - returns a string that has been repeated count times.
+String multiply(String s) - returns a string that has been repeated 5 times.
+
+*/
+
+public class StringHelper {
+    public static String multiply(String s) {
+        String result = "";
+        //write your code here;
+        return multiply(s,5);
+        
+    }
+
+    public static String multiply(String s, int count) {
+        String result = "";
+        //write your code here
+       for (int i = 0; i<count; i++){
+            result += s;
+       }
+        return result;
+        }
+    
+
+    public static void main(String[] args) {
+
+    }
+}
