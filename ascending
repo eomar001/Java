@@ -1,0 +1,36 @@
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.Collections;
+
+/* 
+Ascending numbers
+Task: Write a program that reads 5 numbers from the keyboard and displays them in ascending order.
+
+*/
+
+public class Solution {
+    public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int[]list=new int[5];
+        for(int i =0; i<list.length; i++){
+            int input = Integer.parseInt(reader.readLine());
+            list[i]=input;
+           
+        }
+        Arrays.sort(list);
+        for(int j = 0; j<list.length; j++){
+            System.out.println(list[j]);
+        }
+
+
+
+
+
+        
+
+        //write your code here
+    }
+}
