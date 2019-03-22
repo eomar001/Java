@@ -1,0 +1,42 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+/* 
+Maximum in an array
+
+*/
+
+public class Solution {
+    public static void main(String[] args) throws Exception {
+        int[] array = initializeArray();
+        int max = max(array);
+        System.out.println(max);
+    }
+
+ public static int[] initializeArray() throws IOException {
+        // Create and populate the array
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+            int[] list = new int[20];
+            for(int i=0; i<list.length; i++){
+                String r = reader.readLine();
+                int input = Integer.parseInt(r);
+                list[i] = input;
+            }
+        return list;
+    }
+
+    public static int max(int[] array) {
+        // Find the maximum
+        int maximum= array[0];
+
+        for(int i=0; i<array.length; i++){
+            if( array[i]> maximum) {
+                maximum = array[i];
+            }
+            
+
+        }
+        return maximum;
+    }
+}
